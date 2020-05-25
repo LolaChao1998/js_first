@@ -40,6 +40,7 @@
 
 	p {
 		line-height: 2em;
+		color: #DADADA;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -75,11 +76,11 @@
 		top: -0.5em;
 	}
 
-	hr {
+	/* hr {
 		border-top: solid 1px #888888;
 		border: 0;
 		margin-bottom: 1.5em;
-	}
+	} */
 
 	blockquote {
 		border-left: solid 0.5em #888888;
@@ -93,11 +94,12 @@
 
 	header.major {
 		padding-bottom: 3em;
-		text-transform: uppercase;
+		/* text-transform: uppercase; */
+		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	}
 
 		header.major h2 {
-			margin: 0;
+			margin: 0; 
 			padding: 0;
 			line-height: 1em;
 			font-weight: 800;
@@ -497,6 +499,17 @@
 		color: white;
 	}
 
+
+	.wrapper.style3 {
+		
+		padding-bottom: 2em;
+		background: #223639;
+		background-size: cover;
+		background-attachment: fixed;
+		/*-webkit-backface-visibility: hidden;
+		-webkit-transform: translateZ(0); */
+	}
+
 /* Header */
 
 	#header {
@@ -747,16 +760,22 @@
 		position: relative;
 		width: 250px;
 		height: 250px;
-		background-color: #f08bc3;
+		background-color:#ffffff;
 		margin: 12px;
 		display: flex;
-		justify-content: center;
 		align-items: center;
-		color: white;
-		font-size: 2rem;
+		justify-content: center;
 	  }
-
+      .workpage1{
+		position: relative;
+		display: flex;
+		width: 250px;
+		height: 250px;
+		 background-color:#95A1A3;
+	  }
+	  
 	  .overlay {
+		
 		position: absolute;
 		top: 0;
 		bottom: 0;
@@ -766,24 +785,109 @@
 		width: 100%;
 		opacity: 0;
 		transition: .5s ease;
-		background-color: #519DB3;
 	  }
 	  
 	  .item:hover .overlay {
-		opacity: 0.9;
+		opacity: 0.7;
+
 	  }
 	 
 	  .textcenter{
-		display: table-cell;
-		text-align: center;
-		vertical-align: middle;
-		padding-top: 95px;
-		padding-left: 20px;
-
+		color: #2A4346;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
 	  }
 
       .typetext{
-		  font-size: 10px;
-		  margin-top: 10px;
+		font-size: 12px;
 	  }
-	
+	 
+      .worktitle{
+		  font-size: 1.5em;
+
+	  }
+
+	  .linestyle{
+		  height: 4px;
+		  width: 20%;
+		  align-items: center;
+		  color: #2A4346;
+		  background-color: #2A4346;
+		  border-width: 0ch;
+		  margin-top: 15px;
+		  margin-bottom: 15px;
+	  }
+
+	  .parent{
+		  position: relative;
+	  }
+
+	  .child{
+		  position: absolute;
+		  width: 250px;
+		  height: 250px;
+		  left: 0;
+		  top: 35%;
+	  }
+
+	  .aboutmepage{
+		  display: flex;
+		  position: relative;
+		  width: 100%;
+		  padding: 4em 0em 4em 0em;
+		  justify-content: center;
+		 
+	  }
+
+	  .aboutmetitle{
+		  display: flex;
+		  flex-direction: column;
+		  position: absolute;
+		  padding: 15px;
+	  }
+
+      .item_arrow{
+		  padding-top: 35px;
+	  }
+
+	 .font_aboutme{
+		font-size: 1.4cm;
+		font-weight: 700;
+		color: #ffffff;
+		text-align: center;
+		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+		letter-spacing: 6px;
+	}
+
+	#img0{
+		opacity: 1;
+	}
+
+	#about_left{
+		width: 300px;
+		padding-left: 40px;
+	} 
+
+	.about_right{
+		padding-left: 70px;
+	}
+
+	.container2{
+		margin-left: 80px;
+		margin-right: 80px;
+		margin-top: -60px;
+		
+	}
+
+	.aboutme_righttext{
+		padding-top: 50px;
+	}
+
+	.title_small{
+		font-size: 35px;
+		color: #DADADA;
+		font-weight: 700;
+		letter-spacing: 3px;
+		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	}
