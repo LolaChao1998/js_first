@@ -891,6 +891,16 @@
 		 
 	  }
 
+	  @media screen and (max-width:840px){
+		.aboutmepage{
+			display: flex;
+			position: relative;
+			width: 100%;
+			padding: 0em 0em 0em 0em;
+			justify-content: center;
+		}
+	  }
+
 	  .aboutmetitle{
 		  display: flex;
 		  flex-direction: column;
@@ -909,6 +919,52 @@
 		text-align: center;
 		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 		letter-spacing: 6px;
+	}
+
+	@media screen and (min-width:608px) and (max-width:980px){
+		.aboutmetitle{
+			display: flex;
+			flex-direction: column;
+			position: absolute;
+			padding: 15px;
+		}
+  
+		.item_arrow{
+			padding-top: 0px;
+		}
+  
+	   .font_aboutme{
+		  font-size: 1cm;
+		  font-weight: 700;
+		  color: #ffffff;
+		  text-align: center;
+		  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+		  letter-spacing: 6px;
+	  }
+  
+	}
+	@media screen and (max-width:608px){
+		.aboutmetitle{
+			display: flex;
+			flex-direction: column;
+			position: absolute;
+			padding: 1px;
+		}
+  
+		.item_arrow{
+			padding-top: 0px;
+			width: 150px;
+		}
+  
+	   .font_aboutme{
+		  font-size: 0.7cm;
+		  font-weight: 700;
+		  color: #ffffff;
+		  text-align: center;
+		  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+		  letter-spacing: 6px;
+	  }
+  
 	}
 
 	#img0{
@@ -1022,6 +1078,7 @@
 		/* background-color: white; */
 		position: relative;
 		border-radius: 6px;
+		width: 350px;
 	  }
 	  
 	  /* Media queries - Responsive timeline on screens less than 600px wide */
